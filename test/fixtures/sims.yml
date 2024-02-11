@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  career: MyString
+  review: MyText
+  star: 1
+  user: one
+  post: one
+
+two:
+  career: MyString
+  review: MyText
+  star: 1
+  user: two
+  post: two

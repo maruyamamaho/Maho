@@ -1,0 +1,13 @@
+<%= form_with(model: [@post, @sim], url: post_sim_path(@sim.post, @sim), local: true) do |f| %>
+    <p>通信キャリア</p>
+    <%= f.select :career, [["AU", "AU"], ["SoftBank", "SoftBank"], ["楽天", "楽天"]], include_blank: "選択して下さい" %>
+    <br>
+    <p>評価</p>
+    <%= f.text_area :review %>
+    <div class="star-field">
+      <%= f.collection_radio_buttons :star, [[5, '★'], [4, '★'], [3, '★'], [2, '★'], [1, '★']], :first, :last %>
+    </div>
+    <%= button_tag type: "submit" do %>
+      <i class="far fa-comments"></i> 編集する
+    <% end %>
+ <% end %>

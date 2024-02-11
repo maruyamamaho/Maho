@@ -1,0 +1,30 @@
+<h1>旅行</h1>
+<div class="waku">
+<h3>新規投稿ページ</h3>
+<%= form_for @post do |f| %>
+    <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name, :size => 30 %>
+  </div>
+
+  <div class="field">
+  <%= f.label :location %>
+  <%= f.text_field :place, :size => 30 %>
+</div>
+<div class="field">
+    <%= f.label :photo %>
+    <%= f.file_field :image %>
+  </div>
+<div class="field">
+<%= f.label :impression %>
+<%= f.text_field :about, :size => 30 %>
+</div>
+<div class="toko">
+<%= form_with(model: @your_model, local: true) do |form| %>
+    <%= form.submit "PUSH！", class: "btn btn-border-shadow" %>
+  <% end %>
+</div>
+<% end %>
+</div>
+</div>
+<%= link_to "一覧に戻る", posts_path %>

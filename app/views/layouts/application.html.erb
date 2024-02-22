@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ryokou</title>
+    <title>Travel tales</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <script src="https://kit.fontawesome.com/e4209e7f4d.js"  crossorigin="anonymous"></script> 
+   
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+
   <body>
-  <headeekTwitterer>
-   <h1>Ryokou</h1>
+  <header>
+   <h1>Travel tales</h1>
    <div class="header-list">
     <ul>
      <% if user_signed_in? %>
@@ -26,6 +27,9 @@
   <main>
    <%= yield %>
   </main>
+  <footer>
+  <p>Copyright © GeekSalon All Rights Reserved.</p>
+</footer>
  </body>
 
 </html>

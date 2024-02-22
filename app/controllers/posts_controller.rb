@@ -41,6 +41,11 @@ class PostsController < ApplicationController
           redirect_to :action => "new"
         end
       end
+      def destroy
+        poat = Post.find(params[:id])
+        poat.destroy
+        redirect_to action: :index
+      end
       private
       def post_params
         params.require(:post).permit(:name, :place, :about, :image)

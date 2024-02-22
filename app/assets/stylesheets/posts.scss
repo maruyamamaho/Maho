@@ -33,7 +33,7 @@
     border: solid;
   }
   .post{
-    background-color: red;
+    background-color: rgb(248, 242, 242);
   }
   .waku{
     border: 1px solid #000;
@@ -70,4 +70,15 @@ h3{
     top: 0;
     left: 0;
   }
-  
+  bg_test-text {
+    border:  solid 1px;                             /* 枠線指定 */
+    display:  inline-block;                         /* インラインブロックにする */
+    padding: 10px 20px;                             /* 余白指定 */
+    background-color: rgba(14, 0, 5, 0.893);     /* 背景色指定 */
+}
+.bg_test {
+    text-align:  center;    /* 文字中央寄せ */
+    padding:  150px;        /* 余白指定 */
+    border: solid 2px;      /* 枠線指定 */
+}
+

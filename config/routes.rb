@@ -5,5 +5,6 @@ Rails.application.routes.draw do
     resources :likes, only: [:create, :destroy]
     resources :sims
   end
+  delete 'posts/:id' => 'posts#destroy'
   root 'posts#index'
 end
